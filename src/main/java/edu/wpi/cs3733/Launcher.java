@@ -14,9 +14,6 @@ public class Launcher extends Application {
 	final static private String MAIN_FXML = "src/main/resources/MainView.fxml";
 
 	public static void main(String[] args){
-		CaesarCipher test = new CaesarCipher();
-		System.out.println(test.encode("This is a message"));
-		System.out.println(test.encode("FUCK"));
 		launch();
 	}
 
