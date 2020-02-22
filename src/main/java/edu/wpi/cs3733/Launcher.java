@@ -1,5 +1,6 @@
 package edu.wpi.cs3733;
 
+import edu.wpi.cs3733.entity.CaesarCipher;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
