@@ -33,6 +33,7 @@ public class ElbonianCipher implements Observer {
 				else if((toEncode.charAt(i) == (' '))){
 					toReturn += "S";
 					foundMatch = true;
+					break;
 				}
 				else if(foundMatch = false){
 					System.out.println("Problem");

@@ -20,6 +20,9 @@ public class CaesarCipher implements Observer {
 
 	public String encode(String toEncode){
 		String toReturn = "";
+		if(toEncode.length() > 140){
+			return "INVALID INPUT";
+		}
 		for (int i = 0; i < toEncode.length(); i++) {
 			char currentChar = toEncode.charAt(i);
 			if(!(((int) currentChar > 64 && (int) currentChar < 91) ||

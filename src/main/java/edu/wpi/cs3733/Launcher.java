@@ -1,6 +1,7 @@
 package edu.wpi.cs3733;
 
 import edu.wpi.cs3733.entity.CaesarCipher;
+import edu.wpi.cs3733.entity.ElbonianCipher;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,6 +15,9 @@ public class Launcher extends Application {
 	final static private String MAIN_FXML = "src/main/resources/MainView.fxml";
 
 	public static void main(String[] args){
+		ElbonianCipher cipher = new ElbonianCipher();
+		System.out.println(cipher.encode("A test"));
+		System.out.println(cipher.encode("This is a message"));
 		launch();
 	}
 
