@@ -23,6 +23,9 @@ public class ElbonianCipher implements Observer {
 
 	public String encode(String toEncode){
 		String toReturn = "";
+		if(toEncode.length() > 140){
+			return "INVALID INPUT";
+		}
 		for(int i=0; i < toEncode.length(); i++){
 			for(int q=0; q < alphabet.length; q++){
 				boolean foundMatch = false;
@@ -36,7 +39,7 @@ public class ElbonianCipher implements Observer {
 					break;
 				}
 				else if(foundMatch = false){
-					System.out.println("Problem");
+					return "INVALID INPUT";
 				}
 			}
 
