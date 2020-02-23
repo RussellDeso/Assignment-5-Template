@@ -16,6 +16,7 @@ public class CipherTests {
         assertEquals(cipher.encode("This is a message"), "Ocdn dn v hznnvbz");
         assertEquals(cipher.encode("qKKQxsQClhQxzwbsmgQeBAgRTZnTwbxKLIUkKFWmDMxzCLztqeSoXFJPmcPEbTdPNZnwVKotcMYqqjuZupUGxdioqNQYAHFnwrGtqqfktBaoKbolFogYnYAYeqpachnjbxQnoixLYHRiAKZG"), "INVALID INPUT");
     }
+    @Test
     public void testElbonianCipher(){
         ElbonianCipher cipherE = new ElbonianCipher();
         assertEquals(cipherE.encode(".,.343,.5"), "INVALID INPUT");

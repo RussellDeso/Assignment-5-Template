@@ -27,6 +27,17 @@ public class ElbonianCipher implements Observer {
 			return "INVALID INPUT";
 		}
 		for(int i=0; i < toEncode.length(); i++){
+			if((int) toEncode.charAt(i) > 90 && (int) toEncode.charAt(i) < 97){
+				return "INVALID INPUT";
+			}
+			if((int) toEncode.charAt(i) > 122)
+			{
+				return "INVALID INPUT";
+			}
+			if((int) toEncode.charAt(i) < 65 && (int) toEncode.charAt(i) > 32)
+			{
+				return "INVALID INPUT";
+			}
 			for(int q=0; q < alphabet.length; q++){
 				boolean foundMatch = false;
 				if((toEncode.toUpperCase().charAt(i)) == alphabet[q]){
